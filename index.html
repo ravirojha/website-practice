@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loren Ipsum</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <span class="navBar" onclick="openNav()">&#9776;</span>
+        <h1 class="sidebar-heading">Lorem Ipsum</h1>
+        <div class="sidebar-list" id="sidebarNav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a
+            href="#"
+            class="list-item"
+            style="
+              text-decoration: line-through;
+              text-decoration-color: #ff4e4e;
+            "
+          >
+            About
+          </a>
+          <a href="#" class="list-item">Services</a>
+          <a href="#" class="list-item">Cuisine</a>
+          <a href="#" class="list-item">Gallery</a>
+          <a href="#" class="list-item">Contact</a>
+          <a href="#" class="list-item">Book</a>
+        </div>
+        <button id="cart">Cart</button>
+        <i
+          class="fa fa-shopping-cart"
+          style="font-size: 48px; color: #ff4e4e"
+        ></i>
+      </div>
+      <div class="content">
+        <div class="header">
+          <h1 class="heading">What are you having for Lunch?</h1>
+          <div class="description">
+            <div class="text-desc">
+              Loren Ipsum dolor sit amet, consecteur adipiscing elt, sed do
+              elusmod tempor incididunt ut labore et.
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://drive.google.com/uc?export=view&id=1_xg3BWb3-6ZE7HRi_33jPsPaQvk8ZO4T"
+              alt="mexican taco"
+            />
+            <span class="card-txt">Mexican Taco</span>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://drive.google.com/uc?export=view&id=1YaBHS6f9tSlvu-dCnyRKR5eWUU16DIlE"
+              alt="farmhouse pizza"
+            />
+            <span class="card-txt">Farmhouse Pizza</span>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://drive.google.com/uc?export=view&id=1e6hmM38JZuC0eQS1fs_cAtlQrLM1Mi59"
+              alt="chicken burger"
+            />
+            <span class="card-txt">Chicken Burger</span>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://drive.google.com/uc?export=view&id=1Ju9xg0oOggUuXwuyM4Burtr5iL8EVuve"
+              alt="loaded nachos"
+            />
+            <span class="card-txt">Loaded Nachos</span>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://drive.google.com/uc?export=view&id=1gGgVwPjZfipRETziTBpIT9w92RVQ-gJd"
+              alt="hakka noodles"
+            />
+            <span class="card-txt">Hakka Noodles</span>
+          </div>
+        </div>
+        <div class="mob-description">
+          <div class="text-desc">
+            Loren Ipsum dolor sit amet, consecteur adipiscing elt, sed do
+            elusmod tempor incididunt ut labore et.
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById('sidebarNav').style.width = '250px';
+      }
+
+      function closeNav() {
+        document.getElementById('sidebarNav').style.width = '0';
+      }
+    </script>
+  </body>
+</html>

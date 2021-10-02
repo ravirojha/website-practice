@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+.container {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.navBar {
+  visibility: hidden;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ff4e4e;
+  margin-top: 15px;
+  margin-left: -20px;
+}
+
+.closebtn {
+  visibility: hidden;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+  width: 12vw;
+}
+
+.sidebar-heading {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 100;
+  width: 100%;
+  height: 12.5%;
+  font-size: 2.5rem;
+  padding-left: 6%;
+}
+
+.sidebar-list {
+  position: relative;
+  font-size: 1.3rem;
+  margin-top: -25%;
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-around;
+}
+
+.list-item {
+  text-decoration: none;
+  color: #7b7b7b;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#cart {
+  background-color: #ff4e4e;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 60px 20px 60px;
+  align-self: center;
+  margin-top: 38%;
+  margin-left: -20%;
+}
+
+.fa-shopping-cart {
+  visibility: hidden;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.2%;
+  width: 80vw;
+}
+
+.header {
+  display: flex;
+}
+
+.heading {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 100;
+  font-size: 4.85em;
+  padding-left: 3.5%;
+  width: 44%;
+}
+
+.description {
+  color: #a7a7a7;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3rem;
+  width: 15%;
+  height: 100%;
+  margin-left: 4.5%;
+  padding-top: 4.5%;
+}
+
+.text-desc {
+  padding-bottom: 10%;
+}
+
+.mob-description {
+  visibility: hidden;
+  position: relative;
+}
+
+.line {
+  height: 3px;
+  width: 69px;
+  border-radius: 50px;
+  background: #ff4e4e;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3.6%;
+  margin-left: 2.2%;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.4%;
+  height: 27.5vh;
+  width: 13.5%;
+  min-width: 155px;
+  min-height: 204px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-img {
+  height: 55%;
+  width: 70%;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+
+.card-txt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  padding-left: 35px;
+  padding-top: 17%;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .sidebar {
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .navBar {
+    visibility: visible;
+  }
+
+  .sidebar-list {
+    justify-content: center;
+    height: 120%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-left: -5px;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar-list .closebtn {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    margin-top: 90%;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidebar-list a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar-heading {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .sidebar-heading:after {
+    visibility: visible;
+    position: absolute;
+    content: 'Lorem';
+    font-size: 2rem;
+    top: 0;
+    left: 30%;
+  }
+
+  #cart {
+    visibility: hidden;
+  }
+
+  .fa-shopping-cart {
+    visibility: visible;
+    position: absolute;
+    left: 85%;
+    top: 3%;
+  }
+
+  .header {
+    height: 20vh;
+    width: 100vw;
+  }
+
+  .heading {
+    width: 80%;
+    font-size: 2rem;
+    padding: 0;
+    margin-left: -22px;
+  }
+
+  .description {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .mob-description {
+    visibility: visible;
+    color: #7b7b7b;
+    font-family: 'Open Sans Condensed', sans-serif;
+    top: 50px;
+    width: 100%;
+    padding-bottom: 40px;
+    margin-left: -18px;
+    font-size: 1.3rem;
+  }
+
+  .items {
+    margin: auto;
+  }
+
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
+}
